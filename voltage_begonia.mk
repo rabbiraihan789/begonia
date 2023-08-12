@@ -15,20 +15,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_DOESNT_LIKE_FLIPENDO := true
+TARGET_ENABLE_BLUR := true
 
 # Lunaris Specific Flags
-LUNARIS_BUILD_TYPE := UNOFFICIAL
-WITH_GMS := true
-WITH_GMS_COMMS_SUITE := false
-TARGET_SUPORTS_GOOGLE_TELEPHONY := false
-TARGET_USE_GPHOTOS := false
 TARGET_OPTIMIZED_DEXOPT := true
 TARGET_SUPORTS_OMX_SERVICE := true
-TARGET_FORCE_ENABLE_BLUR := true
-TARGET_USES_GSANS := true
-TARGET_SUPPORTS_QUICK_TAP := true
 USE_ADVANCED_DISPLAY_COLOR := true
 PERF_ANIM_OVERRIDE := true
 SURFACE_FLINGER_BOOST := true
@@ -49,9 +44,12 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Official-ify
+VOLTAGE_BUILD_TYPE := OFFICIAL
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := lineage_begonia
+PRODUCT_NAME := voltage_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
