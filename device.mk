@@ -350,7 +350,11 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     fstab.mt6785 \
     ueventd.mt6785.rc
-    
+
+PRODUCT_PACKAGES += \
+    init.recovery.mt6785.rc \
+    init.recovery.mt6785.sh
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
 
