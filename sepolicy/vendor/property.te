@@ -13,3 +13,6 @@ vendor_public_prop(mtk_powerhal_prop)
 
 # Viodeo Props
 vendor_public_prop(render_prop)
+
+# Wi-Fi
+vendor_public_prop(wlan_fw_prop)
