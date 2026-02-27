@@ -11,6 +11,14 @@ vendor_restricted_prop(vendor_deviceid_prop)
 # Atcid
 vendor_public_prop(persist_atm_prop)
 
+# Audio
+vendor_public_prop(vendor_system_prop)
+
+# Camera property
+vendor_public_prop(vendor_camera_prop)
+vendor_public_prop(vendor_video_prop)
+vendor_public_prop(mtkcam_prop)
+
 # gpud property
 system_public_prop(debug_mtk_gpud_prop)
 
