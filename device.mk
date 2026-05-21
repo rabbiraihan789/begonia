@@ -477,9 +477,6 @@ PRODUCT_PACKAGES += \
     libhidlbase \
     libunwindstack.vendor
 
-PRODUCT_PACKAGES += \
-    libshim_vtservice
-
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
