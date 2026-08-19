@@ -157,6 +157,8 @@ ro.vendor.mtk_log_hide_gps=1
 ro.vendor.mtk_wappush_support=1
 
 # Graphics
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
 debug.hwui.skia_tracing_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
 debug.sf.use_phase_offsets_as_durations=1
@@ -190,7 +192,7 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.running_without_sync_framework=true
 ro.surface_flinger.supports_background_blur=1
-ro.surface_flinger.uclamp.min=130
+ro.surface_flinger.uclamp.min=60
 
 # IMS
 persist.dbg.ims_volte_enable=1
