@@ -28,6 +28,9 @@ ro.opengles.version=196610
 # Kernel
 ro.kernel.zio=38,108,105,16
 
+# Maintainer
+ro.lunaris.maintainer=Rabbi~Raihan
+
 # Netflix
 ro.netflix.bsp_rev=MTK6785-18758-1
 
@@ -78,9 +81,3 @@ ro.zygote.preload.enable=0
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
-
-# InfinityX phoneinfo props
-ro.infinity.soc=Mediatek Helio G90T
-ro.infinity.battery=4500 mAh
-ro.infinity.display=1080x2340, 60Hz
-ro.infinity.camera=64MP+8MP+2MP+2MP
