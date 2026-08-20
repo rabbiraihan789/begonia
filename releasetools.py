@@ -42,7 +42,7 @@ def OTA_InstallEnd(info, incremental):
   info.script.Print("Patching vbmeta & dtbo Images...")
   AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta", incremental)
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo", incremental)
-  Firmware_Images(info, incremental)
+ # Firmware_Images(info, incremental)
 
 def Firmware_Images(info, incremental):
   bin_map = {
