@@ -275,7 +275,7 @@ vendor.debug.pq.shp.en=0
 
 # Radio
 persist.radio.multisim.config=dsds
-persist.vendor.log.tel_log_ctrl=1
+persist.vendor.log.tel_log_ctrl=0
 persist.vendor.mtk_sim_switch_policy=2
 persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
@@ -343,7 +343,7 @@ vendor.sys.thermal.data.path=/data/vendor/thermal/
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
-ro.vendor.connsys.dedicated.log=1
+ro.vendor.connsys.dedicated.log=0
 ro.vendor.mtk_wfd_support=1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.gen=gen4m
