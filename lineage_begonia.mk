@@ -21,16 +21,29 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 
-# Axion Stuff
-AXION_CAMERA_REAR_INFO := 64,8,2,2
-AXION_CAMERA_FRONT_INFO := 20
-AXION_MAINTAINER := Sai_Krishna
-AXION_PROCESSOR := MTK_Helio_G90T
-TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_AXFX := true
-TARGET_INCLUDES_LOS_PREBUILTS := true
-PRODUCT_NO_CAMERA := false
+# Lunaris Specific Flags
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+WITH_GMS := true
+WITH_GMS_COMMS_SUITE := false
+TARGET_SUPORTS_GOOGLE_TELEPHONY := false
+TARGET_USE_GPHOTOS := false
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_SUPORTS_OMX_SERVICE := true
+TARGET_FORCE_ENABLE_BLUR := true
+TARGET_USES_GSANS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_ADVANCED_DISPLAY_COLOR := true
+PERF_ANIM_OVERRIDE := true
+SURFACE_FLINGER_BOOST := true
 BYPASS_CHARGE_SUPPORTED := true
+
+# Fix uses broken libraries
+RELAX_USES_LIBRARY_CHECK := true
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1920

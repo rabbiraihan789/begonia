@@ -16,6 +16,9 @@ ro.charger.enable_suspend=true
 # Kernel
 ro.kernel.zio=38,108,105,16
 
+# maintainer
+ro.lunaris.maintainer=Rabbi~Raihan
+
 # Perf
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
