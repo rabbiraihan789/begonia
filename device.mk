@@ -255,6 +255,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# USB
+# Keep the device-specific init.mt6785.usb.rc instead of the common MTK one.
+$(call soong_config_set_bool,mediatek_gadget,use_custom_usb_gadget_rc,true)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.connectivity.rc \
@@ -285,7 +289,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/mediatek/libaedv \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/xiaomi
 
