@@ -324,10 +324,6 @@ telephony.lteOnCdmaDevice=1
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
-# ScrollOptimizer
-persist.sys.perf.scroll_opt=true
-persist.sys.perf.scroll_opt.heavy_app=1
-
 # Shutdown
 init.userspace_reboot.is_supported=true
 
