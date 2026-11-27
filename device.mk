@@ -22,16 +22,16 @@ TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@6.0-impl:32 \
-    android.hardware.audio.effect@6.0-impl:32 \
-    android.hardware.soundtrigger@2.3-impl:32 \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default:32 \
-    audio.primary.default:32 \
-    audio.r_submix.default:32 \
-    audio.usb.default:32 \
-    audio_policy.stub:32
+    audio.bluetooth.default \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -55,7 +55,7 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek \
-    android.hardware.bluetooth.audio-impl:32
+    android.hardware.bluetooth.audio-impl
 
 # Cgroup
 PRODUCT_COPY_FILES += \
